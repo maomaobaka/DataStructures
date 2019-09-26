@@ -9,8 +9,7 @@ import tree.BST.TreeNode;
 /** 
 * BSTMethod Tester. 
 * 
-* @author <Authors name> 
-* @since <pre>09/26/2019</pre> 
+* @since <pre>09/26/2019</pre>
 * @version 1.0 
 */ 
 public class BSTMethodTest { 
@@ -21,7 +20,7 @@ public void testMethod() throws Exception {
     int vals[]=new int[]{11,12,43,32,61,1};
     BSTMethod method=new BSTMethod();
     root=method.createBST(vals,root);
-    method.inOrder(method.mirror(root));
+    method.dfsBST2(root);
 }
 
 

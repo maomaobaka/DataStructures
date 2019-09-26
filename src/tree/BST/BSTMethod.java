@@ -1,5 +1,8 @@
 package tree.BST;
 
+import com.sun.org.apache.bcel.internal.generic.NEW;
+
+import java.util.ArrayDeque;
 import java.util.LinkedList;
 import java.util.Stack;
 
@@ -44,14 +47,14 @@ public class BSTMethod {
      * 层次遍历BST(效率低)
      */
     public void levelOrder(TreeNode root) {
-        LinkedList<TreeNode> list = new LinkedList<>();
+        ArrayDeque<TreeNode> list = new ArrayDeque<>();
         if (root != null) {
             list.add(root);
             while (!list.isEmpty()) {
                 TreeNode newNode = list.poll();
-                System.out.println(newNode.val + " ");
-                if (root.left != null) list.add(root.left);
-                if (root.right != null) list.add(root.right);
+                System.out.print(newNode.val + " ");
+                if (newNode.left != null) list.add(newNode.left);
+                if (newNode.right != null) list.add(newNode.right);
             }
         }
     }
@@ -212,37 +215,37 @@ public class BSTMethod {
     /**
      * 递归求BST的高度
      */
-    public int highOfTree(TreeNode root){
-        if(root==null) return 0;
-        return highOfTree(root.left)>highOfTree(root.right)?highOfTree(root.left)+1:highOfTree(root.right)+1;
+    public int highOfTree(TreeNode root) {
+        if (root == null) return 0;
+        return highOfTree(root.left) > highOfTree(root.right) ? highOfTree(root.left) + 1 : highOfTree(root.right) + 1;
     }
 
     /**
      * 递归求BST的节点数
      */
-    public int number(TreeNode root){
-        if(root==null) return 0;
-        return number(root.left)+number(root.right)+1;
+    public int number(TreeNode root) {
+        if (root == null) return 0;
+        return number(root.left) + number(root.right) + 1;
     }
 
     /**
      * 交换每个节点的左右孩子
      */
-    public TreeNode mirror(TreeNode root){
-        if(root==null) return null;
-        Stack<TreeNode> stack=new Stack<>();
+    public TreeNode mirror(TreeNode root) {
+        if (root == null) return null;
+        Stack<TreeNode> stack = new Stack<>();
         stack.push(root);
-        while (!stack.isEmpty()){
-            TreeNode node=stack.pop();
-            if(node.left!=null||node.right!=null){
-                TreeNode temp=node.left;
-                node.left=node.right;
-                node.right=temp;
+        while (!stack.isEmpty()) {
+            TreeNode node = stack.pop();
+            if (node.left != null || node.right != null) {
+                TreeNode temp = node.left;
+                node.left = node.right;
+                node.right = temp;
             }
-            if(node.left!=null){
+            if (node.left != null) {
                 stack.push(node.left);
             }
-            if(node.right!=null){
+            if (node.right != null) {
                 stack.push(node.right);
             }
         }
@@ -252,11 +255,11 @@ public class BSTMethod {
     /**
      * 递归交换左右孩子
      */
-    public void mirror2(TreeNode root){
-        if(root==null) return ;
-        TreeNode temp=root.left;
-        root.left=root.right;
-        root.right=temp;
+    public void mirror2(TreeNode root) {
+        if (root == null) return;
+        TreeNode temp = root.left;
+        root.left = root.right;
+        root.right = temp;
         mirror2(root.left);
         mirror2(root.right);
     }

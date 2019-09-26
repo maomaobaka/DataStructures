@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb3e2d8a-2adf-4e23-acaa-dfc17ad79d27" name="Default Changelist" comment="" />
+    <list default="true" id="bb3e2d8a-2adf-4e23-acaa-dfc17ad79d27" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/test/tree/BST/BSTMethodTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructures/test/tree/BST/BSTMethodTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/tree/BST/BSTMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructures/tree/BST/BSTMethod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/tree/BST/BSTMethodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/tree/BST/BSTMethodTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/BST/BSTMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/BST/BSTMethod.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,10 +25,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1RMhmcHsLpPaDk35MFRglfCBLmT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
@@ -29,7 +40,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/tree/BST" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../QA" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -81,11 +92,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569483031560</updated>
-      <workItem from="1569483034676" duration="348000" />
+      <workItem from="1569483034676" duration="686000" />
+      <workItem from="1569484916556" duration="1657000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
