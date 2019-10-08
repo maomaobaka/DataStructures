@@ -20,7 +20,8 @@ public void testMethod() throws Exception {
     int vals[]=new int[]{11,12,43,32,61,1};
     BSTMethod method=new BSTMethod();
     root=method.createBST(vals,root);
-    method.dfsBST2(root);
+    root=method.insertBST(2,root);
+    method.inOrder(root);
 }
 
 
